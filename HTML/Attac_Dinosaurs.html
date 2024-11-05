@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombi and Attack Dinosaurs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Biblioteca de icones do bootstrap -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Biblioteca de animação com scroll bootstrap -->
+    <link rel="stylesheet" href="../CSS/Attac_Dinosaurs.css">
+    <link rel="stylesheet" href="../CSS/Attack_Dinosaurs_Mobile.css">
+
+</head>
+<body class="bgfundo_img">
+
+    <!--Barra de Navegação da página-->
+    <hearder id="barra_nav">
+        <div id="logo_nav"> <!--Divisória do botão logo-->
+            <a><img class="btn_logo_nav" src="../IMG/Logo_emp_GUB/Logo_Verde.png"></a><!--Botão logo-->
+        </div>
+
+        <div id="btns_nav"><!--Divisória dos botões de navegação-->
+            <a href="Attac_Dinosaurs.html" class="form_btn_nav">Home</a>
+            <a href="Sobre.html" class="form_btn_nav">Sobre nós</a>
+            <a class="form_btn_nav">Projetos</a>
+            <a href="Perguntas.html" class="form_btn_nav">Perguntas</a>
+        </div>
+
+        <i id="iconeNavMobile" class="bi bi-list"></i>
+    </hearder>
+
+    <div id="barraNav_mobile">
+        <i id="iconeFecharNavMobile" class="bi bi-x-lg"></i>
+
+        <div class="itens_navMobile">
+            <a href="Attac_Dinosaurs.html" class="form_btn_nav">Home</a>
+            <a href="Sobre.html" class="form_btn_nav">Sobre nós</a>
+            <a class="form_btn_nav">Projetos</a>
+            <a href="Perguntas.html" class="form_btn_nav">Perguntas</a>
+        </div>
+    </div>
+     <!--Fim Barra de Navegação-->
+
+     <section id="layout">
+        <img class="logoJogo" data-aos="zoom-in" data-aos-duration="1000" src="../IMG/logoKAD.png" />
+     </section>
+    
+    <!-- Seção Sobre -->
+    <section id="sobre">
+
+        <div class="sobre_items" data-aos="zoom-in" data-aos-duration="1000"> <!-- "data-aos" é o comando que adiciona a animação com scroll, "data-aos-duration" mexe com a duração da animação --> <!-- Divisória contendo elementos do sobre -->
+            <img src="../IMG/imgJogo.jpg" class="sobre_img">
+
+            <div class="sobre_col">
+                <h2 class="subtitulos">Sobre o jogo</h2> <!-- Subtitulos da página -->
+                <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p> <!-- Comando que cria um paragrafo -->
+                <a href="" target="_blank"><button class="btn">
+                    <span class="btn_text">Baixar</span>
+                </button></a> <!-- Um botão que direcionará para um caminho atribuido em <a href="">-->
+            </div>
+
+        </div>
+
+        <div class="sobre_text" data-aos="fade-up" data-aos-duration="1000">
+            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing Lorem Ipsum</p>
+        </div>
+
+    </section> 
+    <!-- Fim seção Sobre -->
+
+    <main class="conteudo"> <!-- main contendo todo conteudo -->
+        <!-- Seção fases -->
+        <section id="fases">
+            <div class="fases_conteudo">
+                <i id="fases_setaL" class="bi bi-chevron-left"></i> <!-- Icone de seta da biblioteca do bootstrap para passar elementos virada para a esquerda -->
+                <div class="fases_items" data-aos="zoom-out" data-aos-duration="1000">
+                    <div class="fases_text">
+                        <h2 id="titulofase" class="subtitulos">Fase 1: <span>O Posto da Estrada</span></h2>
+                        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                    </div>
+
+                    <div class="fases_btnpassar"> <!-- Divisória onde estarão os botões de animação slider -->
+                        <button class="fases_btn active"></button> <!-- Botão aitvo: o que estará diferente dos outros, mostrando que é o selecionado -->
+                        <button class="fases_btn"></button>
+                        <button class="fases_btn"></button>
+                        <button class="fases_btn"></button>
+                        <button class="fases_btn"></button>
+                    </div>
+                </div>
+                <i id="fases_setaR" class="bi bi-chevron-right"></i> <!-- Segundo icone de seta da biblioteca do bootstrap para passar elementos virada para a direita -->
+            </div>
+        </section> 
+        <!-- Fim Seção Fases -->
+
+        <!-- Seção protagonistas -->
+        <section id="protagonistas">
+            <h2 class="titulos">Protagonistas</h2>
+
+            <div class="protagonista_conjunto">
+                
+                <div class="efeitoTransicao_baixo"></div> <!-- Efeito de transicao gradiante entre os elementos voltado para baixo-->
+
+                <div class="protagonista_fundo protagonista_cor1"> <!-- A classe protagonista_cor foi dada para diferenciar as cores dos elementos protagonista_fundo -->
+                    <img data-aos="zoom-in-right" data-aos-duration="1000" src="../IMG/Img_personagens/jeronimo.png" class="protagonista_img" />
+                    <div data-aos="zoom-in-left" data-aos-duration="1000" class="protagonista_text">
+                        <h2 class="subtitulos">Jerônimo</h2>
+                        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                    </div>
+                </div>
+
+                <div class="efeitoTransicao_cima"></div> <!-- Efeito de transicao gradiante entre os elementos voltado para cima-->
+
+                <div class="efeitoTransicao_baixo"></div>
+
+                <div class="protagonista_fundo protagonista_cor2">
+                    <div data-aos="zoom-in-right" data-aos-duration="1000" class="protagonista_text">
+                        <h2 class="subtitulos">Seu Zé</h2>
+                        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                    </div>
+                    <img data-aos="zoom-in-left" data-aos-duration="1000" src="../IMG/Img_personagens/seuze.png" class="protagonista_img" />
+                </div>
+
+                <div class="efeitoTransicao_cima"></div>
+
+                <div class="efeitoTransicao_baixo"></div>
+
+                <div class="protagonista_fundo protagonista_cor3">
+                    <img data-aos="zoom-in-right" data-aos-duration="1000" src="../IMG/Img_personagens/mirela.png" class="protagonista_img" />
+                    <div data-aos="zoom-in-left" data-aos-duration="1000" class="protagonista_text">
+                        <h2 class="subtitulos">Mirela</h2>
+                        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                    </div>
+                </div>
+                <div class="efeitoTransicao_cima"></div>
+
+                <div class="efeitoTransicao_baixo"></div>
+
+                <div class="protagonista_fundo protagonista_cor4">
+                    <div data-aos="zoom-in-right" data-aos-duration="1000" class="protagonista_text">
+                        <h2 class="subtitulos">Enzo</h2>
+                        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                    </div>
+                    <img data-aos="zoom-in-left" data-aos-duration="1000" src="../IMG/Img_personagens/enzo.png" class="protagonista_img" />
+                </div>
+                <div class="efeitoTransicao_cima"></div>
+            </div>
+
+        </section>
+        <!-- Fim seção protagonistas -->
+
+        <!--Seção Game Art-->
+
+        <section id="game_art">
+            <div id="elementos1">
+                <h1 id="titulo">GAME ART</h1>
+                <div class="obj3d1"></div>
+                <p class="text" id="textkomb">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+            </div>
+
+            <div id="elementos2">
+                <div class="obj3d2"></div>
+                <p class="text" id="textvara">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+            </div>
+        </section>
+
+        <!-- Fim seção Game Art -->
+
+        <!-- Inicio Seção Video -->
+
+        <section id="video_jogo">
+            <div id="conteudo">
+                <iframe id="Vjogo" src="https://www.youtube.com/embed/dRSavkcwmGc" title="fase 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video_btntext">
+                    <a href="" target="_blank">
+                        <button class="btn" id="btn_baixar">
+                            <span class="btn_text">Baixar</span>
+                        </button>
+                    </a>
+
+                    <p class="text textbaixar">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fim Seção Video -->
+
+        <!-- Inicio Footer-->
+
+        <footer>
+
+        </footer>
+
+        <!-- Fim Footer-->
+
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- script da biblioteca de scroll -->
+    <script src="../JS/script.js"></script> <!-- script principal -->
+    <script src="../JS/Home.js"></script>
+    
+    <script type="importmap" >
+        {
+            "imports":{
+                "three": "../3D_Runner/build/three.module.min.js"
+            }
+        }
+    </script>
+      
+    <script type="module" src="../JS/Komb.js" ></script>
+    <script type="module" src="../JS/Vara.js" ></script>
+
+</body>
+</html>

@@ -1,0 +1,511 @@
+/* Importando font do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root, :root[data-theme='cores']{ /* Atribuindo variaveis de cores padrão */
+    --bg-color:#0C0C0C; /* Nome da variavel */
+    --bg-secundary-color:#1a1a1a;
+
+    --link-color:#ABD904;
+    --secundary-link-color:#6f8523;
+
+    --title-color:#969696;
+    --text-color:#fff;
+}
+
+/* Formatando barras de rolagem */
+::-webkit-scrollbar{
+    background-color: #000;
+    width:7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#ABD904;
+    border-radius:2rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:#546b00;
+}
+
+/*Formatação geral da página geral*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/*Ajustando corpo da página*/
+
+/*
+body{
+    background-color:var(--bg-color);
+}
+*/
+.bgfundo_img{
+    background-image: url(../IMG/Backgraund/back.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.bgfundo_color{
+    background-color:var(--bg-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Inicio Barra de Navegação ---------------------------------------------------  */
+#iconeNavMobile, #barraNav_mobile{
+    display:none;
+}
+
+#barra_nav{
+    padding-top: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    position: fixed;
+    width: 100%;
+    height: 7vw;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+    z-index:9999;
+}
+
+/*Ajustes da divisória do botão logo */
+#logo_nav{
+    margin-left: 4vw;
+}
+
+/*Estilizando o botão logo*/
+.btn_logo_nav{
+    user-select: none;
+    cursor: pointer;
+    width: 3.5vw;
+    transition: 1s;
+}
+.btn_logo_nav:hover{
+    scale:1.1;
+}
+
+/*Ajustes da divisória dos botões de navegação da barra_nav*/
+#btns_nav{
+    margin-right: 4vw;
+    display: flex;
+    justify-content: space-between;
+    width: 28vw;
+}
+
+/*Formatação dos botões*/
+.form_btn_nav{
+    font: normal 1.2vw "Radio Canada Big", sans-serif;
+    color: var(--text-color);
+    user-select: none;
+    cursor: pointer;
+    color: var(--link-color);
+    transition: 0.5s;
+}
+.form_btn_nav:hover{
+    font: bold 1.4vw "Radio Canada Big", sans-serif;
+    color:var(--secundary-link-color);
+}
+
+/* Fim Barra de Navegação ------------------------------------------------------- */
+
+/* Formatações texto --------------------------------------------------- */
+.titulos{
+    font-family:"inter";
+    font-weight:800;
+    font-size:5vw;
+    text-transform: uppercase;
+    text-align:center;
+    color:var(--title-color);
+}
+
+.subtitulos{
+    font-size:3vw; /* Tamanho da fonte */
+    font-family:'inter', arial black, sans-serif; /* Tipo da fonte */
+    font-weight:800; /* Expessura da fonte */
+    color:var(--text-color); /* Cor do texto */
+}
+
+.text{
+    font-size:1.4vw;
+    font-family:'inter', arial, sans-serif;
+    font-weight:200;
+    text-align: justify; /* Alinhamento do texto como justificado */
+    color:var(--text-color);
+}
+
+/* Inicio Layout ---------------------------------------------------------------  */
+#layout{
+    display: flex;
+    flex-direction: column;
+    height: 40vw;
+    justify-content: center;
+    align-items:center;
+}
+
+.logoJogo{
+    animation: scaleLogo 5s ease-in-out infinite;;
+    width:40vw;
+}
+
+@keyframes scaleLogo{
+    0%{
+        scale:1;
+    }
+
+    50%{
+        scale:1.05;
+    }
+
+    100%{
+        scale:1;
+    }
+}
+
+/* Fim Layout -------------------------------------------------------------------  */
+
+/* main com conteudo do site ---------------------------------------------------- */
+.conteudo{
+    margin-top:-1vw;
+    background-color:var(--bg-color);
+}
+
+/* Inicio sobre -----------------------------------------------------------------  */
+#sobre{
+    background-image: linear-gradient(rgba(0, 0, 0, 0)10%, var(--bg-color)50%);
+    background-size:cover;
+    padding: 9vw 0 8vw 0;
+}
+
+.sobre_items{
+    display:flex;
+    align-items:center; /* Comando que centraliza o objeto verticalmente*/
+    justify-content:center; /* Comando que centraliza o objeto horizontalmente */
+    gap:6vw; /* Espaçamento entre os itens */
+}
+
+.sobre_img{
+    width:34vw; /* Width = largura */
+    border-radius:1vw;
+}
+
+.sobre_col{
+    display:flex;
+    flex-direction: column; /* Organiza a div em coluna */
+    gap:1.8vw;
+    width:28vw;
+}
+.sobre_text{
+    width:55vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:4vw;
+}
+
+.btn{
+    background-color:var(--secundary-link-color);
+    border:none;
+    border-radius:1vw; /* Arredonda as bordas */
+    width:100%;
+    cursor:pointer; /* Atribui uma animação ao cursor do mouse */
+    padding:1.5vw 0vw 1.5vw 0vw;
+    transition:ease-in-out 0.5s; /* Utilizado para suavizar as animações */
+}
+
+.btn:hover{ /* Animação ao passar o mouse em cima do objeto */
+    background-color:var(--link-color);
+    scale:1.05; /* Aumenta o objeto proporcionalmente */
+}
+.btn_text{
+    font-size:2.5vw;
+    font-family:'inter', arial black, sans-serif;
+    font-weight:1000;
+    color:#1C1C1C;
+    text-transform: uppercase; /* Deixa todo o texto em caixa alta */
+}
+/* Fim sobre --------------------------------------------------------------------- */
+
+
+/* Inicio fases ------------------------------------------------------------------ */
+#fases{
+    width:100%;
+    height:38vw;
+    background-image:url(../IMG/Img_fases/imgFase1.jpg); /* Adicionando imagem de fundo na seção */
+    background-repeat: no-repeat; /* Comando para não repetir a imagem */
+    background-size: cover; /* Comando que faz a imagem de fundo ocupar a seção inteira */
+    background-position: center;
+    background-attachment: fixed; /* Torna a imagem fixa na janela, dando um efeito ao dar scroll */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    transition: 1s;
+}
+.fases_conteudo{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.904) 5%, rgba(0, 0, 0, 0.705) 50%, rgba(0, 0, 0, 0.377));
+    width:100%;
+    height:100%;
+}
+#fases_setaL{
+    margin-left:2vw;
+}
+#fases_setaR{
+    margin-right:2vw;
+}
+
+#fases i{
+    font-size:3vw;
+    color:var(--text-color);
+    transition:ease-in-out 0.2s;
+    cursor:pointer;
+}
+#fases i:hover{
+    color:var(--link-color);
+}
+
+.fases_btnpassar{
+    display:flex;
+    justify-content:center;
+    gap:1.1vw;
+}
+.fases_btn{
+    width:1.1vw;
+    height:1.1vw;
+    background-color:var(--text-color);
+    border:none;
+    border-radius:5rem;
+    transition:ease-in-out 0.5s;
+}
+.fases_btn.active{ /* Personalizando botão ativo */
+    background-color:var(--link-color);
+    scale:1.2;
+}
+
+.fases_text{
+    display:flex;
+    flex-direction: column;
+    gap:1vw;
+    width:50vw;
+}
+.fases_text .subtitulos{
+    text-align: right;
+}
+
+.fases_items{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height:30vw;
+    margin-top:2vw;
+}
+
+.fases_text .subtitulos span{
+    font-size:2.3vw;
+    color:var(--link-color);
+}
+/* Fim fases --------------------------------------------------------------------- */
+
+/* Inicio protagonistas ---------------------------------------------------------- */
+#protagonistas{
+    padding-top:4vw;
+}
+.protagonista_conjunto{
+    margin-top:2vw;
+}
+
+.protagonista_fundo{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:8vw;
+    height:30vw;
+    padding:5vw 14vw 5vw 14vw;
+}
+.protagonista_cor1{
+    background-image:linear-gradient(90deg, #df7614c4 5%, #df761486 20%, #df761450 40%, #df761415 70%, transparent 90%);
+}
+.protagonista_cor2{
+    background-image:linear-gradient(-90deg, #2B448Cc4 5%, #2B448C86 20%, #2B448C50 40%, #2B448C15 70%, transparent 90%);
+}
+.protagonista_cor3{
+    background-image:linear-gradient(90deg, #891837c4 5%, #89183786 20%, #89183750 40%, #89183715 70%, transparent 90%);
+}
+.protagonista_cor4{
+    background-image:linear-gradient(-90deg, #11841Ec4 5%, #11841E86 20%, #11841E50 40%, #11841E15 70%, transparent 90%);
+}
+
+
+.protagonista_img{
+    animation: scale 5s ease-in-out infinite; /* Animação com duração de 5 segundos e infinita */
+    height:30vw;
+    position:relative;
+    z-index:999;
+}
+
+@keyframes scale { /* Atribui animação a classe ".protagonisa_img" que dentro teve um animation chamado de scale (nome chamado aqui) */
+    0%{
+        scale:1;
+        rotate: 5deg;
+    }
+    50%{
+        scale:1.1;
+        rotate: -5deg;
+    }
+    100%{
+        scale:1;
+        rotate: 5deg;
+    }
+} /* A animação aumenta e rotaciona o elemento */
+
+.protagonista_text{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:1.5vw;
+    padding:0vw 3vw 0vw 3vw;
+}
+.protagonista_cor1 .protagonista_text .subtitulos,
+.protagonista_cor3 .protagonista_text .subtitulos{
+    text-align:right;
+}
+
+/* Fim protagonistas ------------------------------------------------------------- */
+
+/* Efeito de transicao */
+.efeitoTransicao_baixo{
+    background-image:linear-gradient(#0c0c0c 10%, #0c0c0cda 30%, #0c0c0ca1 50%, #0c0c0c6c 65%, transparent 90%);
+    height:15vw;
+    margin-bottom:-14vw;
+    position:relative;
+    z-index:99;
+}
+
+.efeitoTransicao_cima{
+    background-image:linear-gradient(0deg, #0c0c0c 10%, #0c0c0cda 30%, #0c0c0ca1 50%, #0c0c0c6c 65%, transparent 90%);
+    margin-top:-14vw;
+    height:15vw;
+    position:relative;
+    z-index:99;
+}
+/* Fim efeito de transicao */
+
+/* Inicio Game Art --------------------------------------------------------------- */
+#game_art{
+    height: 75vw;
+}
+
+#elementos1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#titulo{
+    margin: 0 0 0 0;
+    font: bold 7vw Arial;
+    color:var(--title-color);
+    position: absolute;
+}
+
+.obj3d{
+    display: flex;
+    margin: 2vw auto;
+    justify-content: center;
+}
+
+#textkomb{
+    margin: 35vw 0 0 0;
+    font: normal 1.2vw;
+    font-family:"inter", arial;
+    color:var(--text-color);
+    position: absolute;
+    width: 50vw;
+}
+
+#cena{
+    margin: 0vw;
+    user-select: none;
+}
+
+#elementos2{
+    display: flex;
+    justify-content: right;
+}
+
+.obj3d2{
+    display: flex;
+    margin: 3vw auto;
+    justify-content: center;
+    margin-right: 26vw;
+}
+
+#textvara{
+    margin: 12vw 26vw 0 0;
+    font: normal 1.2vw;
+    font-family:"inter", arial;
+    color:var(--text-color);
+    position: absolute;
+    width: 18vw;
+}
+
+#cena2{
+    margin: 0vw;
+    user-select: none;
+}
+/* Fim Game Art ------------------------------------------------------------------ */
+
+/* Inicio Video do Jogo ------------------------------------------------------------------ */
+#video_jogo{
+    margin-top:5vw;
+}
+
+#conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+#Vjogo{
+    width: 60vw;
+    height: 32.3vw;
+    border-radius: 1vw;
+    text-align: center;
+    box-shadow:  33px 33px 20px #0a0a0a,
+    -33px -33px 20px #0e0e0e;
+}
+
+.video_btntext{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:5vw;
+    margin-top:4vw;
+}
+
+#btn_baixar{
+    width: 24vw;
+    height: 7vw;
+    text-align: center;
+}
+
+.textbaixar{
+    font-size: 1.2vw;
+    width: 28vw;
+}
+/* Fim Video do Jogo ------------------------------------------------------------------ */
+
+
+
+/* Inicio Footer ------------------------------------------------------------------ */
+    footer{
+        margin-top:5vw;
+        background-color:#000;
+        height:5vw;
+    }
+/* Fim Footer ------------------------------------------------------------------ */
